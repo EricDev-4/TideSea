@@ -3,9 +3,14 @@ guid: b4648d6805741814ea0dec4920383497
 ModelImporter:
   serializedVersion: 24600
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Seaweed_Jade.001
+    second: {fileID: 2100000, guid: 4af969f23c4afde4eab03987a998e2d1, type: 2}
   materials:
-    materialImportMode: 2
+    materialImportMode: 1
     materialName: 0
     materialSearch: 1
     materialLocation: 1

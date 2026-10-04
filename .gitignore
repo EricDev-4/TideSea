@@ -12,6 +12,7 @@
 # IDE generated files
 /.idea/
 /.vs/
+/.codex/
 *.csproj
 *.sln
 *.suo

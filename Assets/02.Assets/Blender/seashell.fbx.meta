@@ -3,9 +3,14 @@ guid: 49d5e1e586ed79d4baf0a19a795e97d1
 ModelImporter:
   serializedVersion: 24600
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Seashell_CreamCoral.001
+    second: {fileID: 2100000, guid: c9c23a3748c5c9341ada5b6500f4e2e5, type: 2}
   materials:
-    materialImportMode: 2
+    materialImportMode: 1
     materialName: 0
     materialSearch: 1
     materialLocation: 1

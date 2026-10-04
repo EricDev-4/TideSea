@@ -3,9 +3,14 @@ guid: 3654f0145eba59b488ea0533d398b013
 ModelImporter:
   serializedVersion: 24600
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Crab_CoralCream.002
+    second: {fileID: 2100000, guid: d3a6e886967641041938a68ba987b6d0, type: 2}
   materials:
-    materialImportMode: 2
+    materialImportMode: 1
     materialName: 0
     materialSearch: 1
     materialLocation: 1

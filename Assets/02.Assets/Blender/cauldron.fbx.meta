@@ -3,9 +3,34 @@ guid: 2f617208b22343b429192cfa4b1fad31
 ModelImporter:
   serializedVersion: 24600
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cauldron_Embers.001
+    second: {fileID: 2100000, guid: 2346518e3c2f79d4bb22140a4c3c8c51, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cauldron_Interior.001
+    second: {fileID: 2100000, guid: 341b2fd4d65a53b44bae4fe4466d2bc0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cauldron_Iron.001
+    second: {fileID: 2100000, guid: cb27054a278e63b4ebf738d0c533ef61, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cauldron_Stone.001
+    second: {fileID: 2100000, guid: 043b3414b4fb9e14abc3039ffeba2f72, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cauldron_Wood.001
+    second: {fileID: 2100000, guid: 41e229d7e6662cb408297be979e2856e, type: 2}
   materials:
-    materialImportMode: 2
+    materialImportMode: 1
     materialName: 0
     materialSearch: 1
     materialLocation: 1

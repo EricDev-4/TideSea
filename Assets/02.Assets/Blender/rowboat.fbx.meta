@@ -3,9 +3,14 @@ guid: 9dcafd98482833248b99d43c3b44c517
 ModelImporter:
   serializedVersion: 24600
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Rowboat_PaintedWood.001
+    second: {fileID: 2100000, guid: 0d969d547dddc7a45bbc57a51b3a196d, type: 2}
   materials:
-    materialImportMode: 2
+    materialImportMode: 1
     materialName: 0
     materialSearch: 1
     materialLocation: 1

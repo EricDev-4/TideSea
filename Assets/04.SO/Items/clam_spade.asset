@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da39e64daf2cf2345b359d62fa9b6d95, type: 3}
+  m_Name: clam_spade
+  m_EditorClassIdentifier: Assembly-CSharp::ItemSO
+  prefab: {fileID: 9090343448629086265, guid: fea9e6a5c9529c547a33238fcdff66bf, type: 3}
+  sprite: {fileID: 21300000, guid: 98d741525feac9147b3caa23ed71dc6a, type: 3}
+  itemType: 0
+  stackable: 0
