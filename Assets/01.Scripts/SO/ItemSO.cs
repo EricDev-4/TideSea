@@ -8,11 +8,14 @@ public class ItemSO : ScriptableObject
     public Sprite sprite;
     public ItemType  itemType;
     public bool stackable;
+    public Vector3 localScale;
     
 
     public enum ItemType
     {
-        tool,
-        item,
+        tool = 0,      // 채집 도구
+        item = 1,      // 일반 아이템
+        material = 2,  // 제작 재료
+        food = 4,      // 음식
     }
 }

@@ -1,0 +1,6 @@
+﻿<Solution>
+  <Project Path="sc.stylizedwater3.runtime.csproj" />
+  <Project Path="sc.stylizedwater3.editor.csproj" />
+  <Project Path="Assembly-CSharp-Editor.csproj" />
+  <Project Path="Assembly-CSharp.csproj" />
+</Solution>

@@ -37,6 +37,7 @@ public class InventoryManager : MonoBehaviour
 
     [SerializeField] private PlayerBehavior _player;
 
+    [System.Obsolete]
     private void Start()
     {
         if (_player == null)

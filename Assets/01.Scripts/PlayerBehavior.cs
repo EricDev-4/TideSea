@@ -20,6 +20,7 @@ public class PlayerBehavior : MonoBehaviour
             if (Physics.Raycast(_ray, out RaycastHit hit, maxDistance, layersToHit))
             {
                 Item item = hit.collider.GetComponentInParent<Item>();
+                item.itemSo.localScale = hit.transform.localScale;
                 if (item != null)
                     item.PickUpItem();
             }
@@ -30,7 +31,8 @@ public class PlayerBehavior : MonoBehaviour
 
     public void EquipItem(ItemSO item)
     {
-        if (item == currentItem && (item == null || target != null))
+        // 이미 선택한 아이템이면 변경하지 않음
+        if (item == currentItem)
             return;
 
         if (target != null)
@@ -41,15 +43,17 @@ public class PlayerBehavior : MonoBehaviour
         }
         currentItem = null;
 
-        if (item == null || item.prefab == null || grabPos == null)
+        // 빈 슬롯을 선택하면 기존 아이템을 제거하고 빈손으로 전환
+        if (item == null)
             return;
 
         target = Instantiate(item.prefab, grabPos);
         target.transform.localPosition = Vector3.zero;
         target.transform.localRotation = Quaternion.identity;
+        target.transform.localScale = item.localScale;
         currentItem = item;
 
-        // The held model is a visual copy; only dropped/world items use physics.
+        // 손에 든 아이템은 표시용이므로 물리 효과와 줍기 기능을 끔
         foreach (Rigidbody rb in target.GetComponentsInChildren<Rigidbody>(true))
         {
             rb.useGravity = false;
@@ -71,6 +75,10 @@ public class PlayerBehavior : MonoBehaviour
         Vector3 position = target.transform.position;
         Quaternion rotation = target.transform.rotation;
         if (InventoryManager.Instance.RemoveSelectedItem(out ItemSO item))
-            Instantiate(item.prefab, position, rotation);
+        {
+            GameObject go = Instantiate(item.prefab, position, rotation);
+            go.transform.localScale = item.localScale;
+        }
+            
     }
 }

@@ -6,9 +6,16 @@ public class Item : MonoBehaviour
     
     public bool PickUpItem()
     {
-        if (InventoryManager.Instance == null ||
-            !InventoryManager.Instance.AddItem(itemSo))
+        if (InventoryManager.Instance == null)
+        {
             return false;
+        }
+
+        bool itemAdded = InventoryManager.Instance.AddItem(itemSo);
+        if (itemAdded == false)
+        {
+            return false;
+        }
 
         // Remove the world object only after inventory insertion succeeds.
         gameObject.SetActive(false);

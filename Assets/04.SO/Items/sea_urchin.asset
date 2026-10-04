@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ItemSO
   prefab: {fileID: 9027046467238619510, guid: a64292dd5a4249a42a5de3b1e2f3cb75, type: 3}
   sprite: {fileID: 21300000, guid: 3209370311e8828498b405c7f1dcf0da, type: 3}
-  itemType: 1
+  itemType: 4
   stackable: 1
